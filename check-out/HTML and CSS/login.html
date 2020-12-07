@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="font-family: Verdana;text-align: center;">Login</h1>
+        <div>
+        <form action="file:///C:/Users/Akash/Desktop/Checkout%20form.html">
+            <label for="username" style="font-family: Verdana;">Username:</label>
+            <input type="text" name="username" id="username"><br><br>
+            <label for="user-pwd" style="font-family: Verdana;">Password:</label>
+            <input type="password" name="user-password" id="user-pwd"><br><br>
+            <input type="checkbox" checked="checked">
+            <label class="confirm">
+                I agree to all the terms and conditions 
+                <span class="checkmark"></span>
+            </label><br><br>
+            <button onclick="confirm()">Sign-In</button><br><br>
+            <script>
+                function confirm(){
+                    alert("Account signed in!")
+                }
+            </script>
+            <a href="file:///C:/Users/Akash/Desktop/webtech.html">Sign-In if account is not present</a>
+          </form>
+        </div>
+    </body>
+    <style>
+        body {
+            background-image: url(https://images.pexels.com/photos/3737639/pexels-photo-3737639.jpeg?cs=srgb&dl=pexels-cottonbro-3737639.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        div{text-align: center; font-style: italic; font-size: x-large;}
+    </style>
+</html>
