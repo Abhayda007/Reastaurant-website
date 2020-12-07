@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+.main {
+  background-image: url("../IMAGES/pexels-rajesh-tp-1600711.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  /*background: linear-gradient(to right, #eeeeee9a 0%, #525050 100%);*/
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.logo a {
+  text-decoration: none;
+  /*color: beige;*/
+  color: goldenrod;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 32px;
+}
+
+.nav-links {
+  /*color: aliceblue;*/
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  display: inline-block;
+  /*color: beige;*/
+  color: goldenrod;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: lighter;
+  font-size: 26px;
+  padding: 0 10px;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  /*background: #fff;*/
+  background: goldenrod;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+/*-------------------------------------------*/
+.intro {
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  margin: 2em;
+}
+
+.intro p {
+  font-size: 24px;
+  padding: 20px;
+}
+
+/*--------------------------------------------*/
+/* CSS cards styling*/
+.featured {
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  margin: 2em;
+  font-size: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 2em;
+  grid-gap: 20px;
+}
+.card {
+  background-color: burlywood;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+.container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+
+.details {
+  padding: 20px 10px;
+}
+.details > h3 {
+  color: #020202;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Helvetica;
+  padding-left: 20px;
+  margin: 10px 0 15px 0;
+}
+.details > p {
+  color: darkslategrey;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+}
+
+/*------------------------------------------*/
+/*styling the form*/
+
+.outer-box {
+  background-image: url("../IMAGES/pexels-giftpunditscom-1303098.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+
+  padding: 20px;
+  margin: 2em;
+  border: 3px solid #222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.outer-box:hover {
+  box-shadow: 0 8px 12px 0 darkslategrey, 0 6px 14px 0 darkslategrey;
+  transition-duration: 1s;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  position: relative;
+  /*display: table;
+  margin: auto;*/
+}
+/*
+.column {
+  display: table-cell;
+}*/
+
+.contact,
+.review {
+  margin: 10px;
+  height: 16em;
+  border: 2px solid black;
+}
+
+.contact legend,
+.review legend {
+  font-family: "Pacifico", cursive;
+  color: goldenrod;
+  padding: 10px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.contact input[type="text"],
+input[type="email"],
+input[type="telephone"] {
+  font-family: "Gill Sans";
+  font-size: 18px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.review textarea {
+  font-family: "Gill Sans";
+  margin: 10px;
+  padding: 20px;
+}
+
+button {
+  background-color: goldenrod;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 8px;
+  width: 10em;
+  margin-left: 40%;
+}
+/*------------------------------------*/
+/*review display section*/
+.latest-reviews {
+  margin: 2em;
+  border: 2px solid black;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.latest-reviews h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 36;
+  font-weight: normal;
+  text-align: center;
+}
+
+.latest-reviews:hover {
+  box-shadow: 0 6px 10px 0 darkslategrey, 0 6px 14px 0 darkslategrey;
+  transition-duration: 1s;
+}
+
+.review-card {
+  margin: 2em auto;
+  align-self: center;
+  padding: 10px;
+  box-shadow: 0 6px 10px 0 darkslategrey;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.name {
+  font-family: Helvetica;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.date {
+  font-family: Helvetica;
+  font-size: 16px;
+  float: right;
+}
+
+.text {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 18px;
+}
+
+/*--------------------------------------*/
+/*Footer*/
+
+#footer {
+  display: grid;
+  background-color: darkgrey;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  /*margin-top: 15vh;*/
+}
+
+.location {
+  text-align: left;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+.location h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.working-hours {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+.Socials {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+.Socials h3 {
+  font-size: 24px;
+}
+
+.Socials li {
+  list-style-type: none;
+  padding: 3px;
+}
+
+.Socials a {
+  text-decoration: none;
+  color: #050505;
+}
+
+.Socials a:hover {
+  color: white;
+}

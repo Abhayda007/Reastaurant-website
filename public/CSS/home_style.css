@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url("../IMAGES/pexels-rajesh-tp-1600711.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  width: 100%;
+  margin-top: 5vh;
+  /*background: linear-gradient(to right, #eeeeee9a 0%, #525050 100%);*/
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: beige;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 32px;
+}
+
+.nav-links {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  display: inline-block;
+  color: beige;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: lighter;
+  font-size: 28px;
+  padding: 0 20px;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.main-text {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding: 10% 10%;
+}
+
+.main-text h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: bisque;
+  font-family: "Pacifico", cursive;
+}
+.main-text p {
+  font-size: 40px;
+  color: bisque;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: "Pacifico", cursive;
+}
+
+.button {
+  font-size: 18px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: bisque;
+  color: black;
+  border: #050505 2px solid;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/*About section*/
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 6rem auto;
+  position: relative;
+  height: 95vh;
+  margin-top: 15vh;
+}
+
+.about_content-left {
+  max-width: 100%;
+  height: 100%;
+  background-image: url("../IMAGES/pexels-rajesh-tp-1633578.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 2rem;
+}
+.about_content-right {
+  text-align: center;
+  margin: 1rem;
+}
+.about_content-right .about_title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.about_content-right .about_sub_title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.about_content-right .about_text {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  line-height: 1.5;
+  color: darkgray;
+  text-align: left;
+}
+
+/*Footer*/
+
+#footer {
+  display: grid;
+  background-color: darkgrey;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  margin-top: 15vh;
+}
+
+.location {
+  text-align: left;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+.location h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.working-hours {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+.Socials {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+.Socials h3 {
+  font-size: 24px;
+}
+
+.Socials li {
+  list-style-type: none;
+  padding: 3px;
+}
+
+.Socials a {
+  text-decoration: none;
+  color: #050505;
+}
+
+.Socials a:hover {
+  color: white;
+}
