@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+/*
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+*/
+.App-header {
+  background-color: #92730e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.App button {
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+.App a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  width: 60%;
+
+  border-radius: 50%;
+  border: 2px solid red;
+}
+/*https://ak.picdn.net/shutterstock/videos/22135768/thumb/1.jpg
+https://images.pexels.com/photos/2923034/pexels-photo-2923034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260*/
+.products {
+  padding: 40px;
+
+  background-image: url(https://images.pexels.com/photos/9315/menu-restaurant-france-eating-9315.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+body {
+  /*background-color: hsla(89, 43%, 51%, 0.3);*/
+  background-color: white;
+}
+
+header {
+  background-color: black;
+  background: linear-gradient(black, grey);
+  height: 70px;
+  padding-top: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 12px;
+}
+
+h2 {
+  display: "block";
+  font-size: 30px;
+  font-style: italic;
+}
+h3 {
+  font-size: 30px;
+}
+
+.tab {
+  tab-size: 10;
+}
+
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
